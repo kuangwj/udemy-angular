@@ -1,0 +1,5 @@
+<h1>Update Property Username</h1>
+<input type="text" class="form-control" [(ngModel)]="username">
+<p>Username:{{ username }}</p>
+<!-- <button class="btn bt-primary" [disabled]="username === ''" (click)="allowBtnClick()">Reset Username!</button> -->
+<button class="btn bt-primary" [disabled]="username === ''" (click)="username = ''">Reset Username!</button>
