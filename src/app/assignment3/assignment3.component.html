@@ -1,0 +1,7 @@
+<button class="btn bt-primary" (click)="onButtonClick()">Display Details</button>
+<p *ngIf="displaySecret">Secret password: psyduck</p>
+<div *ngFor="let buttonLog of buttonClickLog; let indexOfElement = index"
+    [ngStyle]="{backgroundColor: indexOfElement >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': indexOfElement >= 5}">
+    {{ buttonLog }}
+</div>
